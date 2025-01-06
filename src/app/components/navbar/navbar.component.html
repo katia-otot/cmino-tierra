@@ -1,0 +1,32 @@
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" routerLink="/">
+        <img src="../assets/logo.jpeg" alt="Camino Tierra" height="50">
+      </a>
+      <button class="navbar-toggler" type="button" (click)="toggleMenu()">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" [ngClass]="{'show': !isMenuCollapsed}" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/" (click)="isMenuCollapsed = true">INICIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/principios" (click)="isMenuCollapsed = true">PRINCIPIOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/proyectos" (click)="isMenuCollapsed = true">PROYECTOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/equipo" (click)="isMenuCollapsed = true">EQUIPO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/participar" (click)="isMenuCollapsed = true">PARTICIPAR</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/contacto" (click)="isMenuCollapsed = true">CONTACTO</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+</nav>

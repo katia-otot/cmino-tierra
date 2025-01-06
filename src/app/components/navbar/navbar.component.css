@@ -1,0 +1,13 @@
+.navbar {
+    background-color: #2b2861;
+    padding: 1rem;
+  }
+  
+  .nav-link {
+    color: white !important;
+    margin: 0 10px;
+  }
+  
+  .navbar-brand img {
+    max-height: 50px;
+  }
