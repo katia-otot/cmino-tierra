@@ -1,13 +1,36 @@
 .navbar {
     background-color: #2b2861;
-    padding: 1rem;
+    height: 100px; /* Definimos una altura fija para el navbar */
   }
   
   .nav-link {
     color: white !important;
     margin: 0 10px;
   }
-  
-  .navbar-brand img {
-    max-height: 50px;
+  .navbar-brand {
+    width: auto;
+    height: 100%; /* Hacemos que ocupe todo el alto del navbar */
+    display: flex;
+    align-items: center;
   }
+  .navbar-brand img {
+    height: 100%; /* Hacemos que la imagen ocupe todo el alto del navbar-brand */
+    object-fit: contain;
+  }
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+  }
+  
+  .navbar-toggler {
+    border-color: white;
+  }/* Agregar estas clases para mejorar el alineamiento */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%; /* Para que el container también ocupe todo el alto */
+}
+
+.navbar-collapse {
+  flex-grow: 0; /* Evita que el menú empuje el logo */
+}
